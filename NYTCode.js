@@ -118,6 +118,9 @@ function runQuery(numArticles, queryURL){
 
 		// Then we will pass the final queryURL and the number of results to include to the runQuery function
 		runQuery(numResults, queryURL);
+
+		// This line allows us to take advantage of the HTML "submit" property. This way we can hit enter on the keyboard and it registers the search (in addition to clicks).
+		return false;
 	});	
 
 // This button clears the top articles section
