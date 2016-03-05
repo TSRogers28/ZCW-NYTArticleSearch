@@ -11,7 +11,7 @@ var startYear 	= 0;
 var endYear		= 0;
 
 // Based on the queryTerm we will create a queryURL 
-var queryURLBase = "http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=" + authKey + "&q=";
+var queryURLBase = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=" + authKey + "&q=";
 
 // Array to hold the various article info
 var articleCounter = 0;
