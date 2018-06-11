@@ -2,6 +2,7 @@
 // ==========================================================
 
 // This variable will be pre-programmed with our authentication key (the one we received when we registered)
+// "b9f91d369ff59547cd47b931d8cbc56b:0:74623931"
 var authKey = "b9f91d369ff59547cd47b931d8cbc56b:0:74623931";
 
 // These variables will hold the results we get from the user's inputs via HTML
