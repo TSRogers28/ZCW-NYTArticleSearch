@@ -8,8 +8,8 @@ var authKey = "b9f91d369ff59547cd47b931d8cbc56b:0:74623931";
 // These variables will hold the results we get from the user's inputs via HTML
 var queryTerm 	= "";
 var numResults 	= 0;
-var startYear 	= 0;
-var endYear		= 0;
+var startYear 	= 1984;
+var endYear		= 1994;
 
 // Based on the queryTerm we will create a queryURL 
 var queryURLBase = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=" + authKey + "&q=";
@@ -106,6 +106,9 @@ function runQuery(numArticles, queryURL){
 
 		// End Year
 		endYear = $('#endYear').val().trim();
+
+		startYear = 1984;
+		endYear = 1994;
 
 		// If the user provides a startYear -- the startYear will be included in the queryURL
 		if (parseInt(startYear)) {
